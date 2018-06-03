@@ -1,3 +1,8 @@
-# FibonacciNumber
-Calc fast fibonacci number for android studio
-フィボナッチ数を高速に求めるAndroid Studio用のプロジェクトです
+# はじめに
+フィボナッチ数f(n)を高速に求めるAndroid Studio用のプロジェクトです
+
+## ポイント
+フィボナッチ数/数列f(n)は再帰関数で簡単に実装可能ですが、単純に実装するとnの数が大きくなった時に処理時間がかかりすぎるという問題が出てきます。本プロジェクトでは過去の計算データをキャッシュとして持っておくことで、不必要な計算を省略することで処理の高速化しています。
+
+## 注意
+サンプルでAndroid StudioのProjectを用意していますが、ヒープ領域が乏しいスマホで実行するとStackOverFlowのExceptionで落ちます。largeヒープつかっていますが、それでも駄目です…。
